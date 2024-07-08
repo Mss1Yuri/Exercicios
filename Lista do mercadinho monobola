@@ -1,0 +1,101 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "028ffa3f-8ebd-42e0-aa8a-21d27c837fb7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#produtos \n",
+    "produtos = {\"maçã\": \"1.00R$\", \n",
+    "            \"banana\": \"0.50R$\",\n",
+    "            \"laranja\": \"0.75R$\",\n",
+    "            \"uva\": \"2.00R$\",\n",
+    "            \"pêra\": \"1.50R$\"}\n",
+    "\n",
+    "def adicionar_produto (nome, preço):\n",
+    "    produtos [nome] = preço\n",
+    "    print(f\"Produto {nome} foi adicionado com sucesso!\")\n",
+    "\n",
+    "def buscar_produto (nome):\n",
+    "    preço = produtos.get(nome)\n",
+    "    if preço:\n",
+    "        print(f\"Preço da {nome}: {preço}\")\n",
+    "    else:\n",
+    "        print(\"Produto não listado!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9bbb40a9-a2da-4489-9032-28710c03641d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "O que você procura? Digite 0 para sair uva\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Preço da uva: 2.00R$\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "O que você procura? Digite 0 para sair banana\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Preço da banana: 0.50R$\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1 = \" \"\n",
+    "while num1 != \"0\" :\n",
+    "    num1 = ( input(\"O que você procura? Digite 0 para sair\") )\n",
+    "    buscar_produto (num1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d8a70905-4442-4fc7-9ded-d61a4955d602",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
